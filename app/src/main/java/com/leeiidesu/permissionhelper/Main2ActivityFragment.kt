@@ -7,7 +7,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.leeiidesu.permission.library.Config
 import com.leeiidesu.permission.library.OnPermissionResultListener
 import com.leeiidesu.permission.library.PermissionHelper
 import kotlinx.android.synthetic.main.fragment_main2.*
@@ -26,11 +25,9 @@ class Main2ActivityFragment : Fragment(), View.OnClickListener, OnPermissionResu
     }
 
     override fun onClick(v: View?) {
-        val config = Config.Builder().setDeniedText("大哥我错了，你快同意！")
-                .setRationaleText("你是傻逼吗？这都不同意？")
-                .build()
-
-        PermissionHelper.request(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA), config, this)
+        PermissionHelper.with(this)
+                .permissions(Manifest.permission.CAMERA)
+                .request()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

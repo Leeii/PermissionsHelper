@@ -6,12 +6,10 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import com.leeiidesu.permission.library.Config
 import com.leeiidesu.permission.library.OnPermissionResultListener
 import com.leeiidesu.permission.library.PermissionHelper
-
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.ArrayList
+import java.util.*
 
 class MainActivity : AppCompatActivity(), OnPermissionResultListener {
     override fun onGranted() {
@@ -31,12 +29,9 @@ class MainActivity : AppCompatActivity(), OnPermissionResultListener {
 
         fab.setOnClickListener { _ ->
 
-            val config = Config.Builder().setDeniedText("大哥我错了，你快同意！")
-                    .setRationaleText("你是傻逼吗？这都不同意？")
-                    .build()
-
-
-            PermissionHelper.request(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA), config, this)
+           PermissionHelper.with(this)
+                   .permissions(Manifest.permission.READ_EXTERNAL_STORAGE)
+                   .request()
 
         }
     }
