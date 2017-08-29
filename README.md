@@ -3,21 +3,22 @@ Android 权限申请
 
 ### use
 
--in `Activity,Fragment,v4.app.Fragment` or use `FragmentManager`
+-in `FragmentActivity,v4.app.Fragment` or use `FragmentManager`
 
 ```
- PermissionHelper.request(this,new String[]{
-                Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.CAMERA
-        });
+PermissionHelper.with(this)
+     .permissions(Manifest.permission.CAMERA)
+     .request();
 ```
 
 or
 
 
 ```
-PermissionHelper.request(this,new String[]{
-                Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.CAMERA
-        },config,resultListener);
+PermissionHelper.with(this)
+    .permissions(Manifest.permission.CAMERA)
+    .showOnRationale("需要相机权限", "取消", "我知道了")
+    .showOnDenied("必需要许可相机权限才能使用该功能", "取消", "去设置")
+    .listener(this)
+    .request();
 ```
