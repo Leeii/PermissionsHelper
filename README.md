@@ -2,9 +2,13 @@
 Android 权限申请
 
 ### use
-- in your *build.gradle*
+- in your ###build.gradle
 
-`compile 'com.leeiidesu:permission-helper:1.1.0'`
+```
+compile 'com.leeiidesu:permission-helper:1.1.0'
+````
+
+然后
 
 
 -in `FragmentActivity,v4.app.Fragment` or use `FragmentManager`
