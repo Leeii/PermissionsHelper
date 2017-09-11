@@ -1,4 +1,4 @@
-package com.leeiidesu.permission.library;
+package com.leeiidesu.permission;
 
 
 import android.support.v4.app.Fragment;

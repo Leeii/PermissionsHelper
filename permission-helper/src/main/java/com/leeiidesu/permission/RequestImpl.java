@@ -1,9 +1,11 @@
-package com.leeiidesu.permission.library;
+package com.leeiidesu.permission;
 
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+
+import com.leeiidesu.permission.callback.OnPermissionResultListener;
 
 /**
  * RequestImpl Created by leeiidesu on 2017/8/28.

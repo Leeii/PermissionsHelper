@@ -1,4 +1,4 @@
-package com.leeiidesu.permission.library;
+package com.leeiidesu.permission;
 
 import android.annotation.TargetApi;
 import android.content.ActivityNotFoundException;
@@ -14,6 +14,8 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
+
+import com.leeiidesu.permission.callback.OnPermissionResultListener;
 
 import java.util.ArrayList;
 import java.util.Locale;

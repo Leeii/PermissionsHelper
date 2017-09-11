@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import com.leeiidesu.permission.library.OnPermissionResultListener
-import com.leeiidesu.permission.library.PermissionHelper
+import com.leeiidesu.permission.PermissionHelper
+import com.leeiidesu.permission.callback.OnPermissionResultListener
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity(), OnPermissionResultListener {
 
         fab.setOnClickListener { _ ->
 
-           PermissionHelper.with(this)
-                   .permissions(Manifest.permission.READ_EXTERNAL_STORAGE)
-                   .request()
+            PermissionHelper.with(this)
+                    .permissions(Manifest.permission.READ_EXTERNAL_STORAGE)
+                    .request()
 
         }
     }

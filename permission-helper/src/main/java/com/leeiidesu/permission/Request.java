@@ -1,4 +1,6 @@
-package com.leeiidesu.permission.library;
+package com.leeiidesu.permission;
+
+import com.leeiidesu.permission.callback.OnPermissionResultListener;
 
 /**
  * Request Created by leeiidesu on 2017/8/28.

@@ -7,8 +7,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.leeiidesu.permission.library.OnPermissionResultListener
-import com.leeiidesu.permission.library.PermissionHelper
+import com.leeiidesu.permission.PermissionHelper
+import com.leeiidesu.permission.callback.OnPermissionResultListener
 import kotlinx.android.synthetic.main.fragment_main2.*
 import java.util.ArrayList
 

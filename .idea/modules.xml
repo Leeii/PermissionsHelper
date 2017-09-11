@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PermissionHelper.iml" filepath="$PROJECT_DIR$/PermissionHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/permission-helper/library.iml" filepath="$PROJECT_DIR$/permission-helper/library.iml" />
+      <module fileurl="file://E:\github\PermissionHelper\permission-helper\library.iml" filepath="E:\github\PermissionHelper\permission-helper\library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/permission-helper/permission-helper.iml" filepath="$PROJECT_DIR$/permission-helper/permission-helper.iml" />
     </modules>
   </component>
 </project>
