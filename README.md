@@ -13,7 +13,7 @@ compile 'com.leeiidesu:permission-helper:1.1.3'
 
 -in `FragmentActivity,v4.app.Fragment` or use `SupportFragmentManager`
 
-```
+```java
 PermissionHelper.with(this) // FragmentActivity/v4.app.Fragment/FragmentManager
      .permissions(Manifest.permission.CAMERA) 
      .request();
@@ -22,7 +22,7 @@ PermissionHelper.with(this) // FragmentActivity/v4.app.Fragment/FragmentManager
 or
 
 
-```
+```java
 PermissionHelper.with(this)
     .permissions(Manifest.permission.CAMERA)
     .showOnRationale("需要相机权限", "取消", "我知道了")    //用户拒绝过但没有勾选不再提示会显示对话框
